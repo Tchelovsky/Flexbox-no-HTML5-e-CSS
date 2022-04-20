@@ -1,0 +1,40 @@
+body, ul, li, p {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 1,2rem;
+	font-family: sans-serif;
+
+
+}
+
+a {
+	text-decoration: none;
+	color: #f5f5dc;
+}
+
+.header {
+background: black;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+align-items: center;
+margin-top: 10px;
+
+}
+.menu {
+	display: flex;
+}
+
+.menu li {
+	margin-right: 10px;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px;
+}
+
+.menu li a:hover{
+	color: darkred;
+}
