@@ -1,40 +1,76 @@
+/* resetar a pagina no CSS */
+
 body, ul, li, p {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	font-size: 1,2rem;
-	font-family: sans-serif;
-
-
+	margin: 0px; /*Tira as margens*/
+	padding: 0px; /*Tira os preenchimento*/
+	list-style: none; /*Tira os bolets ° */
+	font-size: 1.2rem; /*Tamanho da fonte*/
+	font-family: sans-serif; /*Estilo da fonte*/ 
 }
 
 a {
-	text-decoration: none;
-	color: #f5f5dc;
+  text-decoration: none;  /*decoração de texto, tira o sublinhado */ 
+  color: white;  /*Muda a cor da lentra dentro da barra de navegação*/ 
+
 }
+
+/* Flexbox */
+
+h1 {
+	text-align: center;
+	margin: 10px;
+	background: darkred;
+
+	
+}
+
+
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ /*Começamos pelo Header que é nosso cabeçalho*/ 
 
 .header {
-background: black;
-display: flex;
-justify-content: space-between;
-padding: 10px;
-align-items: center;
-margin-top: 10px;
+	background: #1C1C1C; /*Coloca a cor de fundo da sua barra de navegação*/ 
+	display: flex; /*Cola um item do lado e outro do outro ex: LOGO/HOME */ 
+	flex-wrap: wrap; /*Quando a pagina ficar pequena, os intens se alinham*/ 
+	justify-content: space-between; /*Cola um item do lado e outro do outro ex: LOGO <---> HOME*/
+	padding: 20px; /*Da um espaço entra as bordas e o topo*/
+	align-items: center; /*Alinhar os itens entre eles (LOGO com HOME)*/
+	margin-top: 10px;
 
 }
+
+/*Estilizando a parte do MENU*/
+
 .menu {
-	display: flex;
+
+	display: flex; /*Deixa o menu um do lado do outro (HOMEIMAGENSCURIOSIDADESREDES SOCIAIS)*/
+
 }
 
 .menu li {
-	margin-right: 10px;
+	margin-left: 10px; /*Separa o menu um do lado do outro (HOME IMAGENS CURIOSIDADES REDES SOCIAIS)*/
 }
 
 .menu li a {
-	display: block;
-	padding: 10px;
+	display: block; /*Trava o menu no topo*/
+	padding: 10px; /*Faz o preenchimento em 10 pixel dentro das escritas HOME IMAGENS... */
+	color: darkred;
+
 }
 
-.menu li a:hover{
-	color: darkred;
+.flex {
+	display: flex;
+	flex-wrap: wrap ;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.flex > div {
+	flex: 1 1 200px;
+	margin: 10px;
 }
